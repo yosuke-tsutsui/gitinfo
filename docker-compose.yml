@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  rust:
+    container_name: gitinfo_rust
+    build: ./docker/rust
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    tty: true
